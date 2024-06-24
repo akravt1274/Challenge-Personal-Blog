@@ -1,0 +1,103 @@
+:root {
+    --color: #7c6fee;
+}  
+body {
+    background: rgb(247, 229, 237);
+    display: grid;
+    place-items: center;
+}
+
+.blog-container {
+    background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    max-width: 900px;
+    height: auto;
+    margin: 0px auto;  
+    display: grid;
+    grid-template-rows: auto;
+    padding: 0 20px;
+}
+.blog-container > header,
+.blog-container > footer {
+    margin: 10px 0;
+}
+
+/* Setting header section */
+.header {    
+    display: grid;
+    grid-template-columns: 780px 120px;
+    align-items: center;
+}
+header h1 {
+    color: rgb(236, 110, 165);
+    margin: 0;
+}
+header form {
+    margin: auto 0;
+}
+
+/* Setting 'back' button in the header*/
+#back-btn {
+    height: 25px;
+    width: 80px;
+    padding-left: 15px;
+    background: rgb(236, 110, 165);
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+/* Setting 'toggle' switch (checkbox) in the header */
+#toggle-switch {
+    position: relative;
+    float: inline-end;
+}
+/* Placing checkbox on top of the sun icon */
+#toggle {
+    position: absolute;
+    margin: 0;
+    width: 24px; /* matching width/hight of the icon */
+    opacity: 0; /* making checkbox transparent */
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;    
+    cursor: pointer;
+}
+
+/* Setting 'posts' section  */
+.post {
+    border: 2px solid var(--color);
+    padding: 0 10px;    
+    margin: 10px 0;
+}
+.post h2 {
+    margin: 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: #7c6fee;
+    border-bottom: 1px solid var(--color);
+}
+.post > p:nth-child(2){
+    padding: 10px 20px;
+    margin: 0;
+    font-style:italic;
+}
+#posts {
+    border-top:  7px double var(--color);
+    border-bottom: 7px double var(--color);
+}
+
+/* Setting footer section */
+footer h4 {    
+    text-align: center; 
+    margin: 0;   
+}
+footer p {
+    padding: 5px 20px;
+    margin: 0;
+    font-style:italic;
+}
+footer p span {
+    font-weight: bold;
+    font-style:italic;    
+}
+

@@ -1,0 +1,74 @@
+body {
+    background: rgb(247, 229, 237);
+    display: grid;
+    place-items: center;
+}
+
+.index-container {
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    width: 900px;
+    height: auto;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns of equal size */
+    padding: 20px;
+}
+
+.index-container>header:first-child {
+    grid-column: span 3;
+}
+
+.index-container>div {
+    padding: 20px;
+    color: rgb(236, 110, 165);
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+h1 {
+    color: #4232d6;
+    text-align: center;
+}
+
+form {
+    display: grid;
+}
+
+form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Setting 'submit' button */
+#submit-btn {
+    height: 25px;
+    background: #4232d6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Setting 'toggle' switch (checkbox) in the header */
+#toggle-switch {
+    position: relative;
+    float: inline-end;
+}
+
+/* Placing checkbox on top of the sun icon */
+#toggle {
+    position: absolute;
+    margin: 0;
+    width: 24px;
+    /* matching width/hight of the icon */
+    opacity: 0;
+    /* making checkbox transparent */
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    cursor: pointer;
+}
